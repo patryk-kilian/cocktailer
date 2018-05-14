@@ -43,7 +43,7 @@ elements.searchForm.addEventListener('submit', e => {
 
 //HANDLE BUTTON FOR RANDOM DRINKS
 elements.randomButton.addEventListener('click', e => {
-  if (e.target.matches('.btn-random, .btn-random *')) {
+  if (e.target.matches('.btn--random, .btn--random *')) {
     controlSearch('random');
   };
 });

@@ -11,10 +11,13 @@ export const clearResults = () => {
 };
 
 const renderDrink = drink => {
+
   const markup = `
     <div class="drink">
-      <img src="${drink.strDrinkThumb}" alt="" class="drink__image">
-      <a href="" class="drink__link">${drink.strDrink}</a>
+      <figure class="drink__image-box">
+        <img src="${drink.strDrinkThumb}" alt="" class="drink__image">
+      </figure>
+      <a href="#" class="drink__link">${drink.strDrink}</a>
     </div>
   `;
   elements.drinksSection.insertAdjacentHTML('beforeend', markup);
