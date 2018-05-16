@@ -24,6 +24,11 @@ body {
   height: 100%;
 }
 
+img {
+  height: auto;
+  width: 100%;
+}
+
 .main {
   display: flex;
   min-height: 800px;
@@ -46,13 +51,20 @@ a {
 
 /* BUTTONS */
 
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .btn {
   font-size: 1.6rem;
   text-transform: uppercase;
-  padding: 1.5rem 3rem;
+  padding: 1rem 2.5rem;
   border-radius: 10px;
-  border: none;
-  cursor: pointer;
   background-color: #d35400;
   color: #fff;
   font-size: 1.6rem;
@@ -69,20 +81,53 @@ a {
     box-shadow: 0 0.7rem 3rem rgba(101, 90, 86, 0.5);
     background-color: #c24d00;
   }
+
+  &--random,
+  &--search {
+    display: flex;
+    align-items: center;
+  }
+
 }
 
 
 .btn-delete {
-  background-color: red;
-  border-radius: 50%;
-  height: 20px;
-  width: 20px;
   margin-left: 5px;
-  border: none;
-  color: #fff;
   position: absolute;
   right: 15px;
+  padding: 2px;
+
+  & svg {
+    fill: #d63031;
+    height: 2.2rem;
+    width: 2.2rem;
+    transition: all .2s;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    transform: scale(1.1);
+    fill: #be2627;
+  }
 }
+
+/* ICONS */
+
+.icon {
+  height: 3rem;
+  width: 3rem;
+
+  &--random,
+  &--search {
+    fill: #fff;
+    margin-right: 1rem;
+  }
+
+  &--heart {
+    fill: #d63031;
+  }
+}
+
 
 /* HEADER */
 
@@ -123,7 +168,13 @@ a {
     color: #fff;
     letter-spacing: 6px;
     font-weight: 600;
-    margin-right: 5rem;
+    margin-left: 2rem;
+  }
+
+  &__text-box {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
   }
 }
 
@@ -180,7 +231,7 @@ a {
   overflow: hidden;
   padding-bottom: 10px;
 
-  &__image-box {
+  &__fig {
     position: relative;
 
     &::after {
@@ -194,16 +245,11 @@ a {
     }
   }
 
-  &__image {
-    height: auto;
-    width: 100%;
-  }
-
   &__link {
 
     &:link,
     &:visited {
-      color: #657172;
+      color: #394344;
       margin-top: 6px;
       letter-spacing: 2px;
       font-weight: 600;
@@ -226,29 +272,47 @@ a {
 /* FAVORITES */
 
 .favorites {
+  padding: 2rem 0;
   flex: 0 0 25%;
   display: flex;
   flex-direction: column;
   border-left: 1px solid rgba(25, 96, 144, .3);
+
+  &__item {
+    display: flex;
+    padding: 5px 1rem;
+    align-items: center;
+    position: relative;
+  }
+
+  &__fig {
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      background-image: linear-gradient(to right top, rgba(52, 152, 219, .2), rgba(25, 96, 144, .2));
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+    }
+  }
+
+  &__image {
+    border-radius: 50%;
+  }
+
+  &__name {
+    color: #394344;
+    font-weight: 600;
+    margin-left: 10px;
+    padding-right: 10px;
+    font-size: 1.5rem;
+    width: 65%;
+  }
 }
 
-.favorites__item {
-  display: flex;
-  padding: 5px 1rem;
-  align-items: center;
-  position: relative;
-}
-
-.favorites__image {
-  width: 6rem;
-  height: 6rem;
-  border-radius: 50%;
-}
-
-
-.favorites__name {
-  color: black;
-  margin-left: 10px;
-  font-size: 1.5rem;
-  width: 65%;
-}

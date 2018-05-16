@@ -15,54 +15,94 @@
         <h1 class="main-heading">Search for drinks recipes</h1>
       </div>
       <div class="search-bar">
-        <button class="btn btn--random">random</button>
+        <button class="btn btn--random">
+          <svg class="icon icon--random">
+            <use href="img/icons.svg#icon-dice"></use>
+          </svg>
+          <span>random</span>
+        </button>
         <form action="" class="search">
           <input type="text" class="search__field" placeholder="Try margarita ...">
           <button class="btn btn--search">
+            <svg class="icon icon--search">
+              <use href="img/icons.svg#icon-search"></use>
+            </svg>
             <span>Search</span>
           </button>
         </form>
-        <p class="search-bar__paragraph">favorites</p>
+        <div class="search-bar__text-box">
+          <svg class="icon icon--heart">
+            <use href="img/icons.svg#icon-heart"></use>
+          </svg>
+          <p class="search-bar__paragraph">favorites</p>
+        </div>
       </div>
     </header>
     <div class="main">
       <div class="drinks">
-        <div class="drink">
-          <figure class="drink__image-box">
+        <!-- <div class="drink">
+          <figure class="drink__fig">
             <img src="https://www.thecocktaildb.com/images/media/drink/wpxpvu1439905379.jpg" alt="" class="drink__image">
           </figure>
           <a href="#" class="drink__link">Nuked Hot Chocolate</a>
         </div>
         <div class="drink">
-          <figure class="drink__image-box">
+          <figure class="drink__fig">
             <img src="https://www.thecocktaildb.com/images/media/drink/wpxpvu1439905379.jpg" alt="" class="drink__image">
           </figure>
           <a href="#" class="drink__link">Nuked Hot Chocolate</a>
         </div>
         <div class="drink">
-          <figure class="drink__image-box">
+          <figure class="drink__fig">
             <img src="https://www.thecocktaildb.com/images/media/drink/wpxpvu1439905379.jpg" alt="" class="drink__image">
           </figure>
           <a href="#" class="drink__link">Nuked Hot Chocolate</a>
-        </div>
+        </div> -->
       </div>
       <ul class="favorites">
         <li class="favorites__item">
-          <img src="https://www.thecocktaildb.com/images/media/drink/wpxpvu1439905379.jpg" alt="" class="favorites__image">
-          <p class="favorites__name">MARGARITA</p>
+          <figure class="favorites__fig">
+            <img src="https://www.thecocktaildb.com/images/media/drink/wpxpvu1439905379.jpg" alt="" class="favorites__image">
+          </figure>
+          <p class="favorites__name">Margarita</p>
+          <button class="btn-delete">
+            <svg class="icon icon--delete">
+              <use href="img/icons.svg#icon-cancel-circle"></use>
+            </svg>
+          </button>
         </li>
         <li class="favorites__item">
-          <img src="https://www.thecocktaildb.com/images/media/drink/wpxpvu1439905379.jpg" alt="" class="favorites__image">
-          <p class="favorites__name">MARGARITA</p>
+          <figure class="favorites__fig">
+            <img src="https://www.thecocktaildb.com/images/media/drink/qtvvyq1439905913.jpg" alt="" class="favorites__image">
+          </figure>
+          <p class="favorites__name">Blue Margarita</p>
+          <button class="btn-delete">
+            <svg class="icon icon--delete">
+              <use href="img/icons.svg#icon-cancel-circle"></use>
+            </svg>
+          </button>
         </li>
         <li class="favorites__item">
-          <img src="https://www.thecocktaildb.com/images/media/drink/wpxpvu1439905379.jpg" alt="" class="favorites__image">
-          <p class="favorites__name">MARGARITA</p>
+          <figure class="favorites__fig">
+            <img src="https://www.thecocktaildb.com/images/media/drink/loezxn1504373874.jpg" alt="" class="favorites__image">
+          </figure>
+          <p class="favorites__name">Tomys Margarita</p>
+          <button class="btn-delete">
+            <svg class="icon icon--delete">
+              <use href="img/icons.svg#icon-cancel-circle"></use>
+            </svg>
+          </button>
         </li>
         <li class="favorites__item">
-          <img src="https://www.thecocktaildb.com/images/media/drink/wpxpvu1439905379.jpg" alt="" class="favorites__image">
-          <p class="favorites__name">Nuked Hot Chocolate</p>
-          <button class="btn-delete">x</button>
+          <figure class="favorites__fig">
+            <img src="https://www.thecocktaildb.com/images/media/drink/wpxpvu1439905379.jpg" alt="" class="favorites__image">
+          </figure>
+          <p class="favorites__name">Nuked Hot Chocolate with wanilla and dupa</p>
+          <button class="btn-delete">
+            <svg class="icon icon--delete">
+              <use href="img/icons.svg#icon-cancel-circle"></use>
+            </svg>
+          </button>
         </li>
       </ul>
     </div>

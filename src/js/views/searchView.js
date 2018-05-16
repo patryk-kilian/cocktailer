@@ -14,7 +14,7 @@ const renderDrink = drink => {
 
   const markup = `
     <div class="drink">
-      <figure class="drink__image-box">
+      <figure class="drink__fig">
         <img src="${drink.strDrinkThumb}" alt="" class="drink__image">
       </figure>
       <a href="#" class="drink__link">${drink.strDrink}</a>
