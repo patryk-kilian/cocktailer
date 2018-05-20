@@ -17,7 +17,7 @@ const renderDrink = drink => {
       <figure class="drink__fig">
         <img src="${drink.strDrinkThumb}" alt="" class="drink__image">
       </figure>
-      <a href="#" class="drink__link">${drink.strDrink}</a>
+      <a href="#${drink.idDrink}" class="drink__link">${drink.strDrink}</a>
     </div>
   `;
   elements.drinksSection.insertAdjacentHTML('beforeend', markup);
