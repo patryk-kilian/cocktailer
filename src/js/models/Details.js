@@ -13,6 +13,7 @@ export default class Details {
       this.glass = res.data.drinks[0].strGlass;
       this.instruction = res.data.drinks[0].strInstructions;
       this.image = res.data.drinks[0].strDrinkThumb;
+      this.alcoholic = res.data.drinks[0].strAlcoholic;
       let i = 1;
       this.ingredients = [];
       this.measures = [];

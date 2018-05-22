@@ -155,11 +155,12 @@ button {
 /* HEADER */
 
 .main-heading {
-  font-size: 6rem;
+  font-size: 5rem;
   color: #fff;
   text-transform: uppercase;
   font-weight: 300;
-  letter-spacing: 2px;
+  letter-spacing: 1.6px;
+
 }
 
 .heading {
@@ -253,9 +254,24 @@ button {
   box-shadow: 0 2rem 6rem 0.5rem rgba(101, 90, 86, 0.3);
   overflow: hidden;
   padding-bottom: 10px;
+  transition: all .2s;
+
+  &:hover .drink__fig {
+    transform: scale(1);
+  }
+
+  &:hover .drink__fig::after {
+    background-image: none;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+  }
 
   &__fig {
     position: relative;
+    transform: scale(1.01);
+    transition: all .2s;
 
     &::after {
       content: "";
@@ -265,6 +281,7 @@ button {
       position: absolute;
       top: 0;
       left: 0;
+      transition: all .2s;
     }
   }
 
@@ -386,6 +403,10 @@ button {
       position: absolute;
       top: 0;
       left: 0;
+
+      &:hover {
+        background-color: red;
+      }
     }
   }
 

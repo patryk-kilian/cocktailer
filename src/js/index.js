@@ -52,6 +52,8 @@ const controlDetails = async () => {
     } catch (error) {
       console.log(error);
     }
+  } else {
+    searchView.clearResults();
   }
 }
 

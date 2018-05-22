@@ -9,6 +9,14 @@ const createIngredient = (ingredient, measure) => `
   </li>
 `;
 
+const isAlcoholic = alcoholic => {
+  if (alcoholic === "Alcoholic") {
+    return "Yes"
+  } else {
+    return "No"
+  }
+};
+
 
 
 export const renderDetails = details => {
@@ -26,6 +34,7 @@ export const renderDetails = details => {
       <div class="details__info">
         <p><span class="details__span">Category:</span> ${details.category}</p>
         <p><span class="details__span">Glass:</span> ${details.glass}</p>
+        <p><span class="details__span">Alcoholic:</span> ${isAlcoholic(details.alcoholic)}</p>
         <ul class="details__ingredients-list">
           <span class="details__span">Ingredients:</span>
 
