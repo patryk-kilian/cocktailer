@@ -1,4 +1,4 @@
-import {elements} from './base';
+import { elements } from "./base";
 
 const createIngredient = (ingredient, measure) => `
   <li class="details__ingredient">
@@ -11,13 +11,11 @@ const createIngredient = (ingredient, measure) => `
 
 const isAlcoholic = alcoholic => {
   if (alcoholic === "Alcoholic") {
-    return "Yes"
+    return "Yes";
   } else {
-    return "No"
+    return "No";
   }
 };
-
-
 
 export const renderDetails = details => {
   const markup = `
@@ -34,12 +32,16 @@ export const renderDetails = details => {
       <div class="details__info">
         <p><span class="details__span">Category:</span> ${details.category}</p>
         <p><span class="details__span">Glass:</span> ${details.glass}</p>
-        <p><span class="details__span">Alcoholic:</span> ${isAlcoholic(details.alcoholic)}</p>
+        <p><span class="details__span">Alcoholic:</span> ${isAlcoholic(
+          details.alcoholic
+        )}</p>
         <ul class="details__ingredients-list">
           <span class="details__span">Ingredients:</span>
 
 
-         ${details.ingredients.map((el,i) => createIngredient(el, details.measures[i])).join('')}
+         ${details.ingredients
+           .map((el, i) => createIngredient(el, details.measures[i]))
+           .join("")}
 
         </ul>
       </div>
@@ -48,7 +50,7 @@ export const renderDetails = details => {
         <p class="details__instruction-text">${details.instruction}</p>
       </div>
     </div>
-    </div>
+  </div>
   `;
-  elements.drinksSection.insertAdjacentHTML('afterbegin', markup);
-}
+  elements.drinksSection.insertAdjacentHTML("afterbegin", markup);
+};

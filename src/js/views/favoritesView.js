@@ -1,4 +1,4 @@
-import { elements } from './base';
+import { elements } from "./base";
 
 export const renderFavorite = favorite => {
   const markup = `
@@ -16,10 +16,11 @@ export const renderFavorite = favorite => {
       </button>
     </li>
   `;
-  elements.favorites.insertAdjacentHTML('beforeend', markup);
+  elements.favorites.insertAdjacentHTML("beforeend", markup);
 };
 
 export const deleteFavorite = id => {
-  const el = document.querySelector(`.favorites__link[href="#${id}"]`).parentElement;
-  if(el) el.parentElement.removeChild(el);
-}
+  const el = document.querySelector(`.favorites__link[href="#${id}"]`)
+    .parentElement;
+  if (el) el.parentElement.removeChild(el);
+};

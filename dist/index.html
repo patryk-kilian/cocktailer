@@ -23,7 +23,7 @@
         </button>
         <form action="" class="search">
           <input type="text" class="search__field" placeholder="Try margarita ...">
-          <button class="btn btn--search">
+          <button class="btn btn--search" type="submit">
             <svg class="icon icon--search">
               <use href="img/icons.svg#icon-search"></use>
             </svg>
@@ -47,118 +47,63 @@
           <figure class="drink__fig">
             <img src="https://www.thecocktaildb.com/images/media/drink/wpxpvu1439905379.jpg" alt="" class="drink__image">
           </figure>
-          <a href="#" class="drink__link">Nuked Hot Chocolate</a>
+          <a href="#" class="drink__link">Margarita</a>
         </div>
         <div class="drink">
           <figure class="drink__fig">
-            <img src="https://www.thecocktaildb.com/images/media/drink/wpxpvu1439905379.jpg" alt="" class="drink__image">
+            <img src="${drink.strDrinkThumb}" alt="" class="drink__image">
           </figure>
-          <a href="#" class="drink__link">Nuked Hot Chocolate</a>
-        </div>
-        <div class="drink">
-          <figure class="drink__fig">
-            <img src="https://www.thecocktaildb.com/images/media/drink/wpxpvu1439905379.jpg" alt="" class="drink__image">
-          </figure>
-          <a href="#" class="drink__link">Nuked Hot Chocolate</a>
+          <a href="#${drink.idDrink}" class="drink__link">${drink.strDrink}</a>
         </div> -->
 
-        <!-- RECIPE -->
+        <!-- DETAILS -->
 
         <!-- <div class="details">
-          <button class="btn-fav">
-            <svg class="icon icon--heart">
-              <use href="img/icons.svg#icon-heart"></use>
-            </svg>
-          </button>
-          <h2 class="details__title">Margarita Recipe</h2>
-          <figure class="details__fig">
-            <img src="https://www.thecocktaildb.com/images/media/drink/wpxpvu1439905379.jpg" alt="" class="details__img">
-          </figure>
-          <div class="details__info">
-            <p><span class="details__span">Category:</span> Ordinary Drink</p>
-            <p><span class="details__span">Glass:</span> Cocktail glass</p>
-            <ul class="details__ingredients-list">
-              <span class="details__span">Ingredients:</span>
-              <li class="details__ingredient">
-                <figure class="details__ingredient-fig">
-                  <img src="https://www.thecocktaildb.com/images/ingredients/Tequila-Small.png " alt="" class="details__ingredient-img">
-                </figure>
-                <span>Tequila 1 1/2 oz</span>
-              </li>
-              <li class="details__ingredient">
-                <figure class="details__ingredient-fig">
-                  <img src="https://www.thecocktaildb.com/images/ingredients/Triple sec-Small.png " alt="" class="details__ingredient-img">
-                </figure>
-                <span>Triple sec 1/2 oz</span>
-              </li>
-              <li class="details__ingredient">
-                <figure class="details__ingredient-fig">
-                  <img src="https://www.thecocktaildb.com/images/ingredients/Lime juice-Small.png " alt="" class="details__ingredient-img">
-                </figure>
-                <span>Lime Juice 1 oz</span>
-              </li>
-              <li class="details__ingredient">
-                <figure class="details__ingredient-fig">
-                  <img src="https://www.thecocktaildb.com/images/ingredients/Salt-Small.png " alt="" class="details__ingredient-img">
-                </figure>
-                <span>Salt</span>
-              </li>
-            </ul>
-          </div>
-          <div class="details__instruction">
-            <h3 class="details__instruction-title">Instruction</h3>
-            <p class="details__instruction-text">Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass.</p>
+            <button class="btn-fav">
+              <svg class="icon icon--heart">
+                <use href="img/icons.svg#icon-heart"></use>
+              </svg>
+            </button>
+            <h2 class="details__title">Margarita</h2>
+            <figure class="details__fig">
+              <img src="https://www.thecocktaildb.com/images/media/drink/wpxpvu1439905379.jpg" alt="" class="details__img">
+            </figure>
+            <div class="details__info">
+              <p><span class="details__span">Category:</span> Ordinary</p>
+              <p><span class="details__span">Glass:</span> Cocktail glass</p>
+              <p><span class="details__span">Alcoholic:</span> Yes</p>
+              <ul class="details__ingredients-list">
+                <span class="details__span">Ingredients:</span>
+                <li class="details__ingredient">
+                  <figure class="details__ingredient-fig">
+                    <img src="https://www.thecocktaildb.com/images/ingredients/salt-Small.png " alt="" class="details__ingredient-img">
+                  </figure>
+                  <span>1/2 oz Tequila</span>
+                </li>
+              </ul>
+            </div>
+            <div class="details__instruction">
+              <h3 class="details__instruction-title">Instruction</h3>
+              <p class="details__instruction-text">Rub the rim of the glass with the lime slice to make the salt stick to it</p>
+            </div>
           </div>
         </div> -->
       </div>
 
       <ul class="favorites">
-        <!-- <li class="favorites__item">
-          <a class="favorites__link" href="#">
-          <figure class="favorites__fig">
-            <img src="https://www.thecocktaildb.com/images/media/drink/wpxpvu1439905379.jpg" alt="" class="favorites__image">
-          </figure>
-          <p class="favorites__name">Margarita</p>
-          </a>
-          <button class="btn-delete">
-            <svg class="icon icon--delete">
-              <use href="img/icons.svg#icon-cancel-circle"></use>
-            </svg>
-          </button>
-        </li>
-        <li class="favorites__item">
-          <figure class="favorites__fig">
-            <img src="https://www.thecocktaildb.com/images/media/drink/qtvvyq1439905913.jpg" alt="" class="favorites__image">
-          </figure>
-          <p class="favorites__name">Blue Margarita</p>
-          <button class="btn-delete">
-            <svg class="icon icon--delete">
-              <use href="img/icons.svg#icon-cancel-circle"></use>
-            </svg>
-          </button>
-        </li>
-        <li class="favorites__item">
-          <figure class="favorites__fig">
-            <img src="https://www.thecocktaildb.com/images/media/drink/loezxn1504373874.jpg" alt="" class="favorites__image">
-          </figure>
-          <p class="favorites__name">Tomys Margarita</p>
-          <button class="btn-delete">
-            <svg class="icon icon--delete">
-              <use href="img/icons.svg#icon-cancel-circle"></use>
-            </svg>
-          </button>
-        </li>
-        <li class="favorites__item">
-          <figure class="favorites__fig">
-            <img src="https://www.thecocktaildb.com/images/media/drink/wpxpvu1439905379.jpg" alt="" class="favorites__image">
-          </figure>
-          <p class="favorites__name">Nuked Hot Chocolate with wanilla and dupa</p>
-          <button class="btn-delete">
-            <svg class="icon icon--delete">
-              <use href="img/icons.svg#icon-cancel-circle"></use>
-            </svg>
-          </button>
-        </li> -->
+       <!-- <li class="favorites__item">
+         <a class="favorites__link" href="#">
+           <figure class="favorites__fig">
+             <img src="https://www.thecocktaildb.com/images/media/drink/wpxpvu1439905379.jpg" alt="" class="favorites__image">
+           </figure>
+           <p class="favorites__name">Margarita</p>
+         </a>
+         <button class="btn-delete">
+           <svg class="icon icon--delete">
+             <use href="img/icons.svg#icon-cancel-circle"></use>
+           </svg>
+         </button>
+       </li> -->
       </ul>
     </div>
   </div>

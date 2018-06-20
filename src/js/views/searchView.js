@@ -1,17 +1,16 @@
-import {elements} from './base';
+import { elements } from "./base";
 
 export const getInput = () => elements.searchInput.value;
 
 export const clearInput = () => {
-  elements.searchInput.value = '';
+  elements.searchInput.value = "";
 };
 
 export const clearResults = () => {
-  elements.drinksSection.innerHTML = '';
+  elements.drinksSection.innerHTML = "";
 };
 
 const renderDrink = drink => {
-
   const markup = `
     <div class="drink">
       <figure class="drink__fig">
@@ -20,10 +19,9 @@ const renderDrink = drink => {
       <a href="#${drink.idDrink}" class="drink__link">${drink.strDrink}</a>
     </div>
   `;
-  elements.drinksSection.insertAdjacentHTML('beforeend', markup);
-
+  elements.drinksSection.insertAdjacentHTML("beforeend", markup);
 };
 
-export const renderResults = (drinks) => {
+export const renderResults = drinks => {
   drinks.forEach(renderDrink);
 };

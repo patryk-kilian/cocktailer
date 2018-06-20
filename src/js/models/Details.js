@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from "axios";
 
 export default class Details {
   constructor(id) {
@@ -7,7 +7,9 @@ export default class Details {
 
   async getDetails() {
     try {
-      const res = await axios (`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${this.id}`);
+      const res = await axios(
+        `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${this.id}`
+      );
       this.title = res.data.drinks[0].strDrink;
       this.category = res.data.drinks[0].strCategory;
       this.glass = res.data.drinks[0].strGlass;
