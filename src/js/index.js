@@ -29,7 +29,11 @@ const controlSearch = async type => {
     await state.search.getResults();
 
     //RENDER RESULTS TO DOM
-    searchView.renderResults(state.search.result);
+    if (state.search.result === null) {
+      searchView.renderNull();
+    } else {
+      searchView.renderResults(state.search.result);
+    }
   } else {
     console.log("error");
   }

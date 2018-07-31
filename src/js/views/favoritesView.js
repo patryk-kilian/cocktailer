@@ -11,7 +11,7 @@ export const renderFavorite = favorite => {
       </a>
       <button class="btn-delete">
         <svg class="icon icon--delete">
-          <use href="img/icons.svg#icon-cancel-circle"></use>
+          <use href="dist/img/icons.svg#icon-cancel-circle"></use>
         </svg>
       </button>
     </li>

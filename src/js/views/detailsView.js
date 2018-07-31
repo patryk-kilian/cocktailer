@@ -22,7 +22,7 @@ export const renderDetails = details => {
   <div class="details">
       <button class="btn-fav">
         <svg class="icon icon--heart">
-          <use href="img/icons.svg#icon-heart"></use>
+          <use href="dist/img/icons.svg#icon-heart"></use>
         </svg>
       </button>
       <h2 class="details__title">${details.title}</h2>

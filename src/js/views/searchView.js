@@ -25,3 +25,10 @@ const renderDrink = drink => {
 export const renderResults = drinks => {
   drinks.forEach(renderDrink);
 };
+
+export const renderNull = () => {
+  const markup = `
+  <p class="paragraph-big">Sorry not found :(</p>
+  `;
+  elements.drinksSection.insertAdjacentHTML("beforeend", markup);
+};

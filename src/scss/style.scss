@@ -18,6 +18,11 @@ html {
   @media only screen and (max-width: 68.75em) {
     font-size: 50%;
   }
+
+  @media only screen and (max-width: 47.5em) {
+    font-size: 43.75%;
+  }
+
 }
 
 body {
@@ -37,6 +42,10 @@ img {
 .main {
   display: flex;
   min-height: 800px;
+
+  @media only screen and (max-width: 47.5em) {
+    flex-direction: column;
+  }
 }
 
 a {
@@ -46,6 +55,10 @@ a {
 
 ul {
   list-style: none;
+}
+
+.paragraph-big {
+  font-size: 5rem;
 }
 
 .container {
@@ -187,16 +200,26 @@ button {
 
 .header {
   background-image: linear-gradient(to right top, rgba(52, 152, 219, .8), rgba(25, 96, 144, .8)), url("../img/drink.jpg");
+  padding: 1rem;
 }
 
 /* SEARCH */
 
 .search-bar {
   padding: 0 5rem;
-  height: 8rem;
+  min-height: 8rem;
   display: flex;
+  // flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width: 47.5em) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 1rem 5rem;
+  }
 
   &__paragraph {
     font-size: 1.6rem;
@@ -210,7 +233,11 @@ button {
   &__text-box {
     display: flex;
     align-items: center;
-    margin-right: 1rem;
+    margin-right: 2rem;
+
+    @media only screen and (max-width: 47.5em) {
+      margin-top: 1rem;
+    }
   }
 }
 
@@ -218,6 +245,11 @@ button {
   width: 50%;
   display: flex;
   justify-content: center;
+
+  @media only screen and (max-width: 47.5em) {
+    margin-top: 1rem;
+    width: 100%;
+  }
 
   &__field {
     margin-left: 3rem;
@@ -229,6 +261,10 @@ button {
     border: none;
     transition: all .2s;
     outline: none;
+
+    @media only screen and (max-width: 47.5em) {
+      margin-left: 0;
+    }
 
     &::placeholder {
       color: rgb(177, 177, 177);
@@ -255,6 +291,10 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+
+  @media only screen and (max-width: 47.5em) {
+    order: 2;
+  }
 }
 
 .drink {
@@ -263,8 +303,8 @@ button {
   width: 25rem;
   margin: 0 10px;
   margin-top: 10px;
-  box-shadow: 0 2rem 6rem 0.5rem rgba(101, 90, 86, 0.3);
-  overflow: hidden;
+
+  overflow: hidden;box-shadow: 0 2rem 6rem 0.5rem rgba(101, 90, 86, 0.3);
   padding-bottom: 10px;
   transition: all .2s;
 
@@ -330,12 +370,24 @@ button {
   flex-direction: column;
   border-left: 1px solid rgba(25, 96, 144, .3);
 
+  @media only screen and (max-width: 47.5em) {
+    order: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(25, 96, 144, .3);
+    border-left: none;
+  }
+
   &__item {
     display: flex;
     padding: 5px 3rem 5px 1rem;
     align-items: center;
     position: relative;
     transition: all .2s;
+
+    @media only screen and (max-width: 47.5em) {
+      width: 33%;
+    }
 
     &:hover {
       background-color: rgba(52, 152, 219, .2);
@@ -367,6 +419,10 @@ button {
       top: 0;
       left: 0;
       border-radius: 50%;
+
+      @media only screen and (max-width: 47.5em) {
+        display: none;
+      }
     }
   }
 
@@ -399,6 +455,10 @@ button {
     margin-bottom: 3rem;
     color: #c24d00;
     font-size: 2.6rem;
+
+    @media only screen and (max-width: 47.5em) {
+      flex: 0 0 60%;
+    }
   }
 
   &__fig {
@@ -406,6 +466,10 @@ button {
     overflow: hidden;
     position: relative;
     height: 100%;
+
+    @media only screen and (max-width: 47.5em) {
+      flex: 0 0 70%;
+    }
 
     &::after {
       content: "";
