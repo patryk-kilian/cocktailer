@@ -185,6 +185,11 @@ button {
   font-weight: 300;
   letter-spacing: 1.6px;
   text-align: center;
+
+  @media only screen and (max-width: 25em) {
+    font-size: 4rem;
+  }
+
 }
 
 .heading {
@@ -264,6 +269,10 @@ button {
 
     @media only screen and (max-width: 47.5em) {
       margin-left: 0;
+    }
+
+    @media only screen and (max-width: 25em) {
+      width: 80%;
     }
 
     &::placeholder {
